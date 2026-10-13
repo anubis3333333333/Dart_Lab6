@@ -1,17 +1,38 @@
-# my_app
+# Приложение "УГАДАЙ ФЛАГ"
 
-A new Flutter project.
+## Описание
+Приложение отображает случайные интересные флаги и необхождимо их угадать
 
-## Getting Started
+## Автор
+- **ФИО:** Чумаченко Михаил
+- **Группа:** ИСП-242
+- **Дата сдачи:** 13.10.26
 
-This project is a starting point for a Flutter application.
+## Стек и версии
+- **Flutter:** 3.35+
+- **Dart:** 3.x
+- **Платформа:** Web (Chrome)
+- **IDE:** VS Code
 
-A few resources to get you started if this is your first Flutter project:
+## Структура проекта
+- `main.dart` — точка входа, инициализация MaterialApp.
+- `fact_screen.dart` — основной StatefulWidget экрана, содержащий логику переключения фактов.
+- `gradient_background.dart` — кастомный StatelessWidget для градиентного фона.
+- `fact_card.dart` — кастомный StatelessWidget карточки факта, принимающий параметры.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Как запустить
+```bash
+git clone <ссылка_на_ваш_репозиторий>
+cd <папка_проекта>
+flutter pub get
+flutter run -d chrome
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Что изучили
+1. Создание и декомпозиция кастомных классов-виджетов по отдельным файлам.
+2. Использование StatefulWidget и обновление интерфейса через вызов метода `setState()`.
+3. Передача динамических данных в StatelessWidget через параметры конструктора.
+4. Интеграция локальных графических ресурсов (assets) через файл pubspec.yaml.
+5. Работа со встроенной библиотекой `dart:math` и классом `Random` для генерации случайных индексов.
+
+
